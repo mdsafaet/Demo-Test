@@ -1,0 +1,9 @@
+// `flag` = ISO code for <Flag />, `image` = aerial photo in public/cities/. Offices/phones are from novadevelopmentglobal.com.
+const market = (m) => ({ ...m, address: m.addressLines.join(", ") });
+
+export const markets = [
+  market({ name: "Dubai", image: "/cities/dubai.png", country: "United Arab Emirates", flag: "AE", status: "Operating", office: "Head Office", phone: "+971 4 555 8800", phoneHref: "tel:+97145558800", text: "Our Gulf platform brings a global perspective to residential and investment-led development.", addressLines: ["Level 24, Boulevard Plaza", "Downtown Dubai", "United Arab Emirates"] }),
+  market({ name: "Dhaka", image: "/cities/dhaka.png", country: "Bangladesh", flag: "BD", status: "Operating", office: "Bangladesh Office", phone: "+880 2 5566 1200", phoneHref: "tel:+880255661200", text: "Where our story began. Master-planned land estates and communities shaped by local knowledge and long-term thinking.", addressLines: ["Nova Land Tower", "Gulshan Avenue", "Gulshan 2, Dhaka 1212", "Bangladesh"] }),
+  market({ name: "New York", image: "/cities/new-york.png", country: "United States", flag: "US", status: "Expanding", office: "Americas Office", phone: "+1 212 555 0198", phoneHref: "tel:+12125550198", text: "Extending our development platform through commercial opportunities and strategic partnerships in North America.", addressLines: ["One World Trade Center", "Floor 62", "New York, NY 10007", "USA"] }),
+  market({ name: "London", image: "/cities/london.png", country: "United Kingdom", flag: "GB", status: "Entering", office: "UK Office", phone: "+44 20 7946 0958", phoneHref: "tel:+442079460958", text: "A new chapter in our global presence, guided by the same commitment to design, engineering and stewardship.", addressLines: ["One Canada Square", "Canary Wharf", "London E14 5AB", "United Kingdom"] }),
+];
